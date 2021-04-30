@@ -24,7 +24,7 @@ def load_dataset(file):
     """
     Load dataset.
     :param file: str Path to the data file.
-    :return: data(list) of each industry.
+    :return:
     """
     df = pd.read_excel(file, engine="openpyxl", sheet_name=None)
     data = None
