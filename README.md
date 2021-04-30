@@ -1,2 +1,2 @@
-# electricity_forcast
-forcast electricity
+# electricity_forecast
+Forecast the electricity consumption.
