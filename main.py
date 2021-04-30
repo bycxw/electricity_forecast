@@ -96,11 +96,11 @@ def main(args):
     print("Load and preprocess data done.")
     print("Train and predict...")
     for industry in tqdm(industries):
-        with open(os.path.join(args.save_dir, "{}_month.log".format(industry)), 'w', encoding='utf-8') as f:
+        with open(os.path.join(args.save_dir, "{}_month.txt".format(industry)), 'w', encoding='utf-8') as f:
             train_predict(data_month[industry], 24, f)
-        with open(os.path.join(args.save_dir, "{}_season.log".format(industry)), 'w', encoding='utf-8') as f:
+        with open(os.path.join(args.save_dir, "{}_season.txt".format(industry)), 'w', encoding='utf-8') as f:
             train_predict(data_season[industry], 8, f)
-        with open(os.path.join(args.save_dir, "{}_year.log".format(industry)), 'w', encoding='utf-8') as f:
+        with open(os.path.join(args.save_dir, "{}_year.txt".format(industry)), 'w', encoding='utf-8') as f:
             train_predict(data_year[industry], 2, f)
     print("Done!")
 
